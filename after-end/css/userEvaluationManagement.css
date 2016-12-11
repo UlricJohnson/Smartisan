@@ -1,0 +1,62 @@
+#container{
+	/*border: 1px solid ghostwhite;*/
+	height: auto;
+}
+
+/*未审核/已审核*/
+#container > .btn-group{
+	margin: 25px 0 25px 50px;
+}
+
+/*评价内容begin*/
+#container > .evaluationDiv{
+	width: 850px;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*.evaluationDiv > div{
+	display: inline-block;
+}*/
+
+.evaluationDiv > div.userNameDiv{
+	width: 150px;
+	float: left;
+}
+
+.evaluationDiv > div.userNameDiv h4{
+	/*vertical-align: middle;*/
+	/*text-align: center;*/
+}
+
+.evaluationDiv > div.content{
+	width: 700px;
+	/*max-height: 350px;*/
+	/*overflow: initial;*/
+	float: right;
+	border-left: 1px solid rgb(204,204,204);
+	padding-left: 50px;
+	padding-top: 25px;
+	
+}
+
+.evaluationDiv > .content p{
+	line-height: 1.8em;
+	text-indent: 2em;
+}
+
+.evaluationDiv > .content input[type="button"]{
+	float: right;
+	margin-right: 25px;
+}
+/*评价内容end*/
+
+/*底部分页bedin*/
+footer{
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+/*底部分页end*/
+
+

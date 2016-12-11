@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>锤子商城后台首页</title>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	</head>
+	
+	<script type="text/javascript">
+	
+		$('#collapseOne, #collapseTwo, #collapseThree').collapse({
+	 		parent : '#accordion',
+	 		toggle : false,
+		});
+	
+	</script>
+	
+	<body>
+		
+		<!--头部导航begin-->
+		<nav class="navbar navbar-inverse" style="background: #171614;" role="navigation">
+	  		<div class="navbar-header">
+	  			<img src="img/logo.jpg"/>
+	  		</div>
+	  		
+	  		<div id="nav-ul">
+	  			<ul>
+	  				<li><a href=""><span class="glyphicon glyphicon-user">&nbsp;<strong>Welcome Admin</strong></span></a></li>
+	  				<li><a href=""><span class="glyphicon glyphicon-log-out">&nbsp;<strong>login out</strong></span></a></li>
+	  			</ul>
+	  		</div>
+		</nav>
+		<!--头部导航end-->
+		
+		<!--下部容器begin-->
+		<div id="container">
+			
+			<!--左侧导航begin-->
+			<div id="body-left">
+				<div class="panel-group" id="accordion">
+					
+					<div class="panel panel-default">
+						<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion"><div class="panel-heading">
+							<h4 class="panel-title">
+								商品管理
+							</h4>
+						</div></a>
+						<div id="collapseOne" class="panel-collapse collapse">
+							<a href="subpage/productManagement/addPrdct.html" target="page"><div class="panel-body">
+								添加商品
+							</div></a>
+							<a href="subpage/productManagement/beenShelves.html" target="page"><div class="panel-body">
+								已上架商品
+							</div></a>
+							<a href="subpage/productManagement/notYetShelf.html" target="page"><div class="panel-body">
+								未上架商品
+							</div></a>
+						</div>
+					</div>
+				
+					<div class="panel panel-default">
+						<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"><div class="panel-heading">
+							<h4 class="panel-title">
+								订单管理
+							</h4>
+						</div></a>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<a href="subpage/OrdersManagement/orderDetails.html" target="page"><div class="panel-body">
+								订单详情
+							</div></a>
+							<a href="subpage/OrdersManagement/returnAndReplacement.html" target="page"><div class="panel-body">
+								退换货申请单处理
+							</div></a>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<a href="subpage/userEvaluationManagement.html" target="page"><div class="panel-heading">
+							<h4 class="panel-title">
+								用户评价管理
+							</h4>
+						</div></a>
+					</div>
+					
+					<div class="panel panel-default">
+						<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion"><div class="panel-heading">
+							<h4 class="panel-title">
+								公告资讯/关于企业
+							</h4>
+						</div></a>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<a href="subpage/Announcement/annouEdit.html" target="page"><div class="panel-body">
+								公告资讯
+							</div></a>
+							<a href="subpage/Announcement/compCulEdit.html" target="page"><div class="panel-body">
+								关于企业
+							</div></a>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<a href="subpage/superManagement/superManagement.html" target="page"><div class="panel-heading">
+							<h4 class="panel-title">
+								超级管理
+							</h4>
+						</div></a>
+					</div>
+					
+				</div>
+			</div>
+			<!--左侧导航end-->
+			
+			<!--右侧内容begin-->
+			<iframe name="page" id="page"  width="1210px" height="592px" style="border: 1px solid black; position: absolute;top: 50px;left: 150px;">
+				
+			</iframe>
+			<!--右侧内容end-->
+		
+		</div>
+		<!--下部容器end-->
+		
+	</body>
+</html>

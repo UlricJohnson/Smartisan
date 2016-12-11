@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户评价管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/userEvaluationManagement.css"/>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userEvaluationManagement.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="container">
+			<!--位置提醒-->
+			<div class="posiRemind">您当前的位置：<strong>用户评价管理</strong></div>
+			
+			<!--未审核/已审核-->
+			<div class="btn-group">
+				<button id="notReviewed" type="button" class="btn btn-default">未审核</button>
+				<button id="audited" type="button" class="btn btn-default">已审核</button>
+			</div>
+			
+			<div class="evaluationDiv">
+				<div class="userNameDiv">
+					<!--<div>-->
+						<h4><strong>用户名</strong></h4>
+					<!--</div>-->
+				</div>
+				<div class="content">
+					<!--<div>-->
+						<p>JavaScript
+						《JavaScript高级程序设计》+ 入门级 +  306 票  + 豆瓣评分 9.3
+						推荐语：
+						恐龙：再次预言这本书能认真看十遍着 都能进bat
+						阿琛：详尽地解读了JS这门语言的各个组成部分，透彻地剖析了JS所涉及的编程思想，深入浅出地演示了丰富的JS应用实例…读完这本书你不一定就能成为前端大牛，但如果你真的能把这本书读懂，吃透，那么你离JS高手肯定不远啦！
+						《编写可维护的JavaScript》+ 入门级 + 185 票 + 豆瓣评分 8.2
+						推荐语：
+						Master.Huoooo：乌龟书，很薄，但从工程实践的角度谈了常见的坑，其中的工作习惯值得coder们学习
+						《Javascript语言精粹》/ 蝴蝶书 + 入门级 + 97 票 + 豆瓣评分 9.1
+						推荐语：
+						宵伯特：集 JS 之精华，弃其糟粕，人手一本，前端必备
+						《锋利的jQuery》+ 入门级 + 91 票 + 豆瓣评分 8.1
+						推荐语：
+						Arron：学习jQuery必备书籍，不能错过
+						陶宇：前后台通用快速使用jQuery，必备良书。
+						《JavaScript DOM 编程艺术（第二版）》+ 入门级 + 131 票 + 豆瓣评分 8.7
+						推荐语：
+						SAVEKAI：这本书的讲解方式非常亲切，人情味十足，初学者的福音。看完也能看看蝴蝶书。
+						荣锋：度过菜鸟阶段就会更多考虑性能和优化了《高性能 JavaScript》，当然还有其他好书这只是我的一个经历
+						《学习 JavaScript 数据结构与算法》+ 入门级 + 31 票 + 豆瓣评分 7.6
+						推荐语：
+						微笑的鱼：很薄的一本书，很详细的讲解了使用js实现常用的数据结构和算法，对于更高效的使用js很有帮助。
+						</p>
+					<!--</div>-->
+					<input class="btn btn-default btn-success" type="button" value="通过" />
+					
+				</div>
+
+			</div>
+
+			<!--底部分页begin-->
+			<footer>
+				<ul class="pager">
+	    			<li><a href="#">上一页</a></li>
+	    			<li><a href="#">下一页</a></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search" action="" method="get">
+					第<strong style="color: darkmagenta;">1</strong>页
+					共<strong style="color: darkmagenta;">10</strong>页
+				  	<div class="form-group">
+				    	<input type="text" class="form-control">
+				  	</div>
+				  	<button type="submit" class="btn btn-success">跳转</button>
+				</form>
+			</footer>
+			<!--底部分页end-->
+
+		</div>
+		
+		
+		
+	</body>
+</html>

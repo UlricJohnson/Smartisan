@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>未上架</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/shelf.css"/>
+		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/shelf.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="container">
+			
+			<!--位置提醒-->
+			<div class="posiRemind">您当前的位置：<span>商品管理</span> > <strong>未上架商品</strong></div>
+			
+			<!--顶部搜索框begin-->
+			<div id="searchDIV" class="input-group">
+				<input id="searchInput" type="text" class="form-control" placeholder="请输入商品名称或编号"> 
+				<input id="searchBtn" type="button" name="" class="btn btn-success" value="查询"/>
+				<a href="addPrdct.html" id="searchBtn" class="btn btn-success">添加商品</a>
+				<!--<input id="searchBtn" type="button" name="" class="btn btn-success" value="添加商品"/>-->
+			</div>
+			<!--顶部搜索框end-->
+			
+			<!--内容表格begin-->
+			<div id="content">
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>	<!--标题-->
+							<th><input class="checkBoxAll" type="checkbox"/> 全选 </th>
+							<th>编号</th>
+							<th>缩略图</th>
+							<th>名称</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="warning">	<!--第1行-->	
+							<td class="text-center"><input class="subCheckBox" type="checkbox"/></td>
+							<td class="text-center">1</td>
+							<td class="text-center"><img src="../../img/banner.jpg" /></td>
+							<td class="text-center">锤子Smartisan M1</td>
+							<td class="text-center">未上架</td>
+							<td class="text-center">
+								<a href="notYetShelfProductDetails.html" class="btn btn-warning btn-sm">详情</a>
+								<a href="shelves.html" class="btn btn-danger btn-sm">上架</a>
+							</td>
+						</tr>
+						<tr class="info">	<!--第2行-->
+							<td class="text-center"><input class="subCheckBox" type="checkbox"/></td>
+							<td class="text-center">2</td>
+							<td class="text-center"><img src="../../img/banner.jpg" /></td>
+							<td class="text-center">锤子Smartisan M1</td>						
+							<td class="text-center">未上架</td>
+							<td class="text-center">
+								<a href="notYetShelfProductDetails.html" class="btn btn-warning btn-sm" >详情</a>
+								<a href="shelves.html" class="btn btn-danger btn-sm">上架</a>
+							</td>
+						</tr>
+						<tr class="warning">	<!--第3行-->
+							<td class="text-center"><input class="subCheckBox" type="checkbox"/></td>
+							<td class="text-center">3</td>
+							<td class="text-center"><img src="../../img/banner.jpg" /></td>
+							<td class="text-center">锤子Smartisan M1</td>						
+							<td class="text-center">未上架</td>
+							<td class="text-center">
+								<a href="notYetShelfProductDetails.html" class="btn btn-warning btn-sm">详情</a>
+								<a href="shelves.html" class="btn btn-danger btn-sm">上架</a>
+							</td>
+						</tr>
+						<tr class="info">	<!--第4行-->
+							<td class="text-center"><input class="subCheckBox" type="checkbox"/></td>
+							<td class="text-center">4</td>
+							<td class="text-center"><img src="../../img/banner.jpg" /></td>
+							<td class="text-center">锤子Smartisan M1</td>						
+							<td class="text-center">未上架</td>
+							<td class="text-center">
+								<a href="notYetShelfProductDetails.html" class="btn btn-warning btn-sm">详情</a>
+								<a href="shelves.html" class="btn btn-danger btn-sm">上架</a>
+							</td>
+						</tr>
+						<tr class="warning">	<!--第5行-->
+							<td class="text-center"><input class="subCheckBox" type="checkbox"/></td>
+							<td class="text-center">5</td>
+							<td class="text-center"><img src="../../img/banner.jpg" /></td>
+							<td class="text-center">锤子Smartisan M1</td>						
+							<td class="text-center">未上架</td>
+							<td class="text-center">
+								<a href="notYetShelfProductDetails.html" class="btn btn-warning btn-sm" >详情</a>
+								<a href="shelves.html" class="btn btn-danger btn-sm">上架</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--内容表格end-->
+			
+			<!--底部分页begin-->
+			<footer>
+				<!--<div>-->
+					<ul class="pager">
+	    				<li><a href="#">上一页</a></li>
+	    				<li><a href="#">下一页</a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search" action="" method="get">
+						第<strong style="color: darkmagenta;">1</strong>页
+						共<strong style="color: darkmagenta;">10</strong>页
+					  	<div class="form-group">
+					    	<input type="text" class="form-control">
+					  	</div>
+					  	<button type="submit" class="btn btn-success">跳转</button>
+					</form>
+				<!--</div>-->
+			</footer>
+			<!--底部分页end-->
+			
+		</div>
+		
+	</body>
+</html>

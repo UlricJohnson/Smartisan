@@ -1,0 +1,88 @@
+#container{
+	margin: 0 auto;
+	height: auto;
+	width: 600px;
+	border: 5px solid rgba(102,153,204,1);
+	border-radius: 5px;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	/*margin-top: -225px;*/
+	margin-left: -300px;
+	background-color: rgba(218,218,218,0.2);
+}
+
+/*表单begin*/
+.navbar-form{
+	width: 100%;
+}
+
+/*.navbar-form .form-group{
+	margin-left: 15px;
+}*/
+
+.navbar-form .form-group:nth-child(1),
+.navbar-form .form-group:nth-child(2){
+	margin: 20px auto;
+	width: 250px;
+}
+
+.navbar-form .form-group:nth-child(3){
+	margin-bottom: 20px;
+}
+
+.navbar-form .form-group:nth-child(3) input.tbFileUpload{
+	margin-left: 15px;
+}
+
+.navbar-form .form-group:nth-child(1) span,
+.navbar-form .form-group:nth-child(2) span{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.navbar-form .form-group input.form-control{
+	width: 200px;
+	margin-left: 25px;
+}
+
+/*.navbar-form .form-group:nth-child(3) input.form-control{
+	margin-left: 10px;
+}*/
+
+/*.navbar-form .table, 
+.navbar-form .table *{
+	border-radius: 3px;
+}*/
+
+/*表格begin*/
+.navbar-form .table tbody td input.tbTextInput{	/*文本输入框*/
+	width: 86px;
+	padding: 2px;
+	border: 1px solid rgb(221,221,221);
+	border-radius: 3px;
+}
+
+.navbar-form .table tbody td input.tbFileUpload{	/*图片上传*/
+	width: 175px;
+}
+/*表格end*/
+
+/*按钮begin*/
+.navbar-form .btnDiv{
+	margin: 0 auto 10px;
+	width: 300px;
+}
+
+.navbar-form .btnDiv input[type="submit"]{
+	width: 100px;
+	margin: 0 15px;
+	background-color: rgba(102,153,204,1);
+	color: white;
+}
+/*按钮end*/
+
+/*表单end*/
+
+
+

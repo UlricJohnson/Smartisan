@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>退换货申请单处理</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/returnAndReplacement.css"/>
+		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/returnAndReplacement.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="container">
+			<!--位置提醒-->
+			<div class="posiRemind">您当前的位置：<span>订单管理</span> > <strong>退换货申请单处理</strong></div>
+			
+			<!--顶部搜索框begin-->
+			<div class="row">
+				
+				<!--下拉框-->
+				<div class="btn-group">
+				  	<button type="button" class="btn btn-default">未处理</button>
+				  	<button type="button" class="btn btn-default">已同意</button>
+				 	<button type="button" class="btn btn-default">已拒绝</button>
+				</div>
+				
+				<!--搜索框-->
+				<div class="col-lg-6">
+				    <div class="input-group">
+				      	<input type="text" class="form-control" placeholder="请输入申请表编号">
+				      	<span class="input-group-btn">
+				        	<button class="btn btn-default" type="button">查询</button>
+				      	</span>
+				    </div>	
+				</div>	
+			</div>	
+			<!--顶部搜索框end-->
+			
+			<!--内容表格begin-->
+			<div id="content">
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th class="text-center">类型</th>
+							<th class="text-center">申请表编号</th>
+							<th class="text-center">用户账号</th>
+							<th class="text-center">商品名称</th>
+							<th class="text-center">状态</th>
+							<th class="text-center">申请日期</th>
+							<th class="text-center">申请原因</th>
+							<th class="text-center">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>	<!--第1行-->
+							<td class="text-center">换货</td>
+							<td class="text-center">156</td>
+							<td class="text-center">6584</td>
+							<td class="text-center">锤子M1</td>
+							<td class="text-center">已同意</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">屏幕有裂痕</td>
+							<td class="text-center">
+								<button class="btn btn-info btn-sm">同意</button>
+								<button class="btn btn-danger btn-sm">拒绝</button>
+							</td>
+						</tr>
+						<tr>	<!--第2行-->
+							<td class="text-center">换货</td>
+							<td class="text-center">156</td>
+							<td class="text-center">6584</td>
+							<td class="text-center">锤子M1</td>
+							<td class="text-center">未处理</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">屏幕有裂痕</td>
+							<td class="text-center">
+								<button class="btn btn-info btn-sm">同意</button>
+								<button class="btn btn-danger btn-sm">拒绝</button>
+							</td>
+						</tr>
+						<tr>	<!--第3行-->
+							<td class="text-center">换货</td>
+							<td class="text-center">156</td>
+							<td class="text-center">6584</td>
+							<td class="text-center">锤子M1</td>
+							<td class="text-center">已拒绝</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">屏幕有裂痕</td>
+							<td class="text-center">
+								<button class="btn btn-info btn-sm">同意</button>
+								<button class="btn btn-danger btn-sm">拒绝</button>
+							</td>
+						</tr>
+						<tr>	<!--第4行-->
+							<td class="text-center">退货</td>
+							<td class="text-center">156</td>
+							<td class="text-center">6584</td>
+							<td class="text-center">锤子M1</td>
+							<td class="text-center">已同意</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">屏幕有裂痕</td>
+							<td class="text-center">
+								<button class="btn btn-info btn-sm">同意</button>
+								<button class="btn btn-danger btn-sm">拒绝</button>
+							</td>
+						</tr>
+						<tr>	<!--第5行-->
+							<td class="text-center">退货</td>
+							<td class="text-center">156</td>
+							<td class="text-center">6584</td>
+							<td class="text-center">锤子M1</td>
+							<td class="text-center">已同意</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">屏幕有裂痕</td>
+							<td class="text-center">
+								<button class="btn btn-info btn-sm">同意</button>
+								<button class="btn btn-danger btn-sm">拒绝</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--内容表格end-->
+			
+			<!--底部分页begin-->
+			<footer>
+					<ul class="pager">
+	    				<li><a href="#">上一页</a></li>
+	    				<li><a href="#">下一页</a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search" action="" method="get">
+						第<strong style="color: darkmagenta;">1</strong>页
+						共<strong style="color: darkmagenta;">10</strong>页
+					  	<div class="form-group">
+					    	<input type="text" class="form-control">
+					  	</div>
+					  	<button type="submit" class="btn btn-success">跳转</button>
+					</form>
+			</footer>
+			<!--底部分页end-->
+		</div>
+		
+		<!--编辑信息弹框begin-->
+		<!--<div id="editMsg">
+			
+			<div id="back"></div>
+			
+			<div id="msgForm">
+				<header>
+					<h4><b>编辑信息</b></h4>
+					<button class="close">
+						<span style="color: red;">&times;</span>
+					</button>
+				</header>
+				<form class="navbar-form nagbar-left" role="search">
+					<div class="form-group">
+						<strong>编号：</strong><input type="text" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<strong>图片：</strong><input type="text" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<strong>名称：</strong><input type="text" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<strong>相关信息：</strong><input type="text" class="form-control"/>
+					</div>
+				</form>
+				
+				<input type="button" value="完成" class="btn btn-success btn-block"/>
+			</div>
+			
+		</div>-->
+		<!--编辑信息弹框end-->
+		
+	</body>
+</html>

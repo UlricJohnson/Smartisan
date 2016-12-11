@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/prdctDetails.css"/>
+		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="container">
+			
+			<form  id="addGoodsForm" enctype="multipart/form-data"  class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+			  		<span><strong>商品编号</strong>：</span>
+			    	<p id="dNum" class="data">102</p>
+			  	</div>
+			  	<div class="form-group">
+			  		<span><strong>商品名称</strong>：</span>
+			    	<p id="dName" class="data">锤子M1</p>
+			  	</div>
+			  	<div class="form-group">
+			  		<span><strong>商品类型</strong>：</span>
+			    	<p id="dType" class="data">手机</p>
+			  	</div>
+			  	<div class="form-group">
+			  		<span><strong>标题简介</strong>：</span>
+			    	<p id="dTitle" class="data">骁龙821处理器</p>
+			  	</div>
+			  	<div class="form-group">
+			  		<span><strong>商品状态</strong>：</span>
+			    	<p id="dStatus" class="data">已上架</p>
+			  	</div>
+			  	
+			  	<table class="table table-bordered">
+			  		<thead>
+			  			<tr>	<!--标题-->
+			  				<th class="text-center">型号</th>
+			  				<th class="text-center">颜色</th>
+			  				<th class="text-center">库存</th>
+			  				<th class="text-center">内存</th>
+			  				<th class="text-center">价格</th>
+			  				<th class="text-center">成交量</th>
+			  			</tr>
+			  		</thead>
+			  		<tbody>
+			  			<tr>	<!--第1行-->
+			  				<td class="text-center"><p id="mID1" class="data mID">202</p></td>
+			  				<td class="text-center"><p id="" class="data color">镜面白</p></td>
+			  				<td class="text-center"><p id="" class="data number">500</p></td>
+			  				<td class="text-center"><p id="" class="data capacity">4G+32G</p></td>
+			  				<td class="text-center"><p id="" class="data price">2499.00</p></td>
+			  				<td class="text-center"><p id="" class="data">350</p></td>
+			  			</tr>
+			  			<tr>	<!--第2行-->
+			  				<td class="text-center"><p id="mID2" class="data mID">202</p></td>
+			  				<td class="text-center"><p id="" class="data color">镜面白</p></td>
+			  				<td class="text-center"><p id="" class="data number">500</p></td>
+			  				<td class="text-center"><p id="" class="data capacity">4G+32G</p></td>
+			  				<td class="text-center"><p id="" class="data price">2499.00</p></td>
+			  				<td class="text-center"><p id="" class="data">350</p></td>
+			  			</tr>
+			  			<tr>	<!--第3行-->
+			  				<td class="text-center"><p id="mID3" class="data mID">202</p></td>
+			  				<td class="text-center"><p id="" class="data color">镜面白</p></td>
+			  				<td class="text-center"><p id="" class="data number">500</p></td>
+			  				<td class="text-center"><p id="" class="data capacity">4G+32G</p></td>
+			  				<td class="text-center"><p id="" class="data price">2499.00</p></td>
+			  				<td class="text-center"><p id="" class="data">350</p></td>
+			  			</tr>
+			  			<tr>	<!--第4行-->
+			  				<td class="text-center"><p id="mID4" class="data mID">202</p></td>
+			  				<td class="text-center"><p id="" class="data color">镜面白</p></td>
+			  				<td class="text-center"><p id="" class="data number">500</p></td>
+			  				<td class="text-center"><p id="" class="data capacity">4G+32G</p></td>
+			  				<td class="text-center"><p id="" class="data price">2499.00</p></td>
+			  				<td class="text-center"><p id="" class="data">350</p></td>
+			  			</tr>
+			  			<tr>	<!--第5行-->
+			  				<td class="text-center"><p id="mID5" class="data mID">202</p></td>
+			  				<td class="text-center"><p id="" class="data color">镜面白</p></td>
+			  				<td class="text-center"><p id="" class="data number">500</p></td>
+			  				<td class="text-center"><p id="" class="data capacity">4G+32G</p></td>
+			  				<td class="text-center"><p id="" class="data price">2499.00</p></td>
+			  				<td class="text-center"><p id="" class="data">350</p></td>
+			  			</tr>
+			  		</tbody>
+			  	</table>
+			  	
+			  	<div class="btnDiv">
+				  	<!--<input type="button"  onclick="AddGoods()" class="btn btn-default" value="确&nbsp;&nbsp;&nbsp;定">-->
+				  	<!--<input type="submit" class="btn btn-default" value="取&nbsp;&nbsp;&nbsp;消">-->
+				  		<button class="btn btn-default" onclick="window.location='editPrdct.html'">编&nbsp;&nbsp;&nbsp;辑</button>
+				  		<button class="btn btn-default">返&nbsp;&nbsp;&nbsp;回</button>
+				</div>
+			</form>
+			
+		</div>
+		
+		<script type="text/javascript">
+			var i = $("span:first").html();
+			alert(i);
+		</script>
+		
+	</body>
+</html>

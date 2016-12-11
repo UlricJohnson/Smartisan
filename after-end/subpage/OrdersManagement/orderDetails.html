@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单详情</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/orderDetails.css"/>
+		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/orderDetails.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--大容器begin-->
+		<div id="container">
+			<!--位置提醒-->
+			<div class="posiRemind">您当前的位置：<span>订单管理</span> > <strong>订单详情</strong></div>
+			
+			<!--顶部搜索框组begin-->
+			<div class="row">
+				<!--订单类型-->
+				<div class="btn-group">
+				  	<button type="button" class="btn btn-default">未发货</button>
+				  	<button type="button" class="btn btn-default">已发货</button>
+				 	<button type="button" class="btn btn-default">已签收</button>
+				</div>
+				
+				<!--搜索框-->
+				<div class="col-lg-6">
+				    <div class="input-group">
+				      	<input type="text" class="form-control" placeholder="请输入订单编号">
+				      	<span class="input-group-btn">
+				        	<button class="btn btn-default" type="button">查询</button>
+				      	</span>
+				    </div>	
+				</div>	
+			</div>	
+			<!--顶部搜索框组end-->
+			
+			<!--内容表格begin-->
+			<div id="content">
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>	<!--标题-->
+							<th class="text-center">订单编号</th>
+							<th class="text-center">用户账号</th>
+							<th class="text-center">发货地址</th>
+							<th class="text-center">下单时间</th>
+							<th class="text-center">状态</th>
+							<th class="text-center">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>	<!--第1行-->
+							<td class="text-center">0123</td>
+							<td class="text-center">20146548</td>
+							<td class="text-center">仲恺路500号</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">待发货</td>
+							<td class="text-center">
+								<a href="orderDetail.html" class="btn btn-warning btn-sm">详情</a>
+								<button class="btn btn-danger btn-sm">编辑</button>
+							</td>
+						</tr>
+						<tr>	<!--第2行-->
+							<td class="text-center">0123</td>
+							<td class="text-center">20146548</td>
+							<td class="text-center">仲恺路500号</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">已发货</td>
+							<td class="text-center">
+								<a href="orderDetail.html" class="btn btn-warning btn-sm">详情</a>
+								<button class="btn btn-danger btn-sm">编辑</button>
+							</td>
+						</tr>
+						<tr>	<!--第3行-->
+							<td class="text-center">0123</td>
+							<td class="text-center">20146548</td>
+							<td class="text-center">仲恺路500号</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">已签收</td>
+							<td class="text-center">
+								<a href="orderDetail.html" class="btn btn-warning btn-sm">详情</a>
+								<button class="btn btn-danger btn-sm">编辑</button>
+							</td>
+						</tr>
+						<tr>	<!--第4行-->
+							<td class="text-center">0123</td>
+							<td class="text-center">20146548</td>
+							<td class="text-center">仲恺路500号</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">待发货</td>
+							<td class="text-center">
+								<a href="orderDetail.html" class="btn btn-warning btn-sm">详情</a>
+								<button class="btn btn-danger btn-sm">编辑</button>
+							</td>
+						</tr>
+						<tr>	<!--第5行-->
+							<td class="text-center">0123</td>
+							<td class="text-center">20146548</td>
+							<td class="text-center">仲恺路500号</td>
+							<td class="text-center">2016年5月9日<br />00:00:00</td>
+							<td class="text-center">待发货</td>
+							<td class="text-center">
+								<a href="orderDetail.html" class="btn btn-warning btn-sm">详情</a>
+								<button class="btn btn-danger btn-sm">编辑</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--内容表格end-->
+			
+			<!--底部分页begin-->
+			<footer>
+				<ul class="pager">
+	    			<li><a href="#">上一页</a></li>
+	    			<li><a href="#">下一页</a></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search" action="" method="get">
+					第<strong style="color: darkmagenta;">1</strong>页
+					共<strong style="color: darkmagenta;">10</strong>页
+				  	<div class="form-group">
+				    	<input type="text" class="form-control">
+				  	</div>
+				  	<button type="submit" class="btn btn-success">跳转</button>
+				</form>
+			</footer>
+			<!--底部分页end-->
+		</div>
+		<!--大容器end-->
+		
+		<!--编辑信息弹框begin-->
+		<div id="editMsg">
+			<div id="back"></div>
+			
+			<div id="msgForm">
+				<header>
+					<!--<div><strong style="font-size: 1.3em;">编辑信息</strong></div>-->
+					<h4><b>编辑信息</b></h4>
+					<button class="close">
+						<span style="color: red;">&times;</span>
+					</button>
+				</header>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<strong>订单编号：</strong><input type="text" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<strong>用户账号：</strong><input type="text" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<strong>发货地址：</strong><input type="text" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<strong>下单时间：</strong><input type="text" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<strong>状态：</strong><!--<input type="text" class="form-control"/>-->
+						<div class="dropdown">	<!--下拉框-->
+						  	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+						    	Dropdown
+						    	<span class="caret"></span>
+						  	</button>
+						  	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">未发货</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">已发货</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">已签收</a></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+				
+				<input type="button" value="完成" class="btn btn-success btn-block"/>
+			</div>
+		</div>
+		<!--编辑信息弹框end-->
+	</body>
+</html>

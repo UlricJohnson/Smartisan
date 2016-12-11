@@ -1,0 +1,65 @@
+/*编辑信息弹框begin*/
+/*#editMsg{
+	display: none;
+}*/
+
+/*#back{	灰色背景div
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(71,71,71,0.2);
+}*/
+
+#msgForm{	/*弹框表格div*/
+	border: 5px solid green;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.95);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -175px;
+	width: 350px;
+	/*height: 400px;*/
+}
+
+#msgForm header h4{	/*弹框表格div标题*/
+	/*margin: 0;*/
+	text-align: center;
+	padding: 0;
+}
+
+#msgForm .close{	/*弹框关闭按钮位置*/
+	position: relative;
+	top: -40px;
+}
+
+#msgForm > form{	/*弹框表格*/
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#msgForm > form .form-group{
+	margin: 15px 0;
+	
+}
+#msgForm > form .form-group:nth-child(2){
+	margin-left: 10px;
+}
+#msgForm > form .form-group:nth-child(1) p,
+#msgForm > form .form-group:nth-child(2) p{
+	display: inline;
+	margin: 0 20px;
+	font-size: 15px;
+}
+
+#msgForm > form .form-group:nth-child(3) input{	/*密码输入框*/
+	margin-left: 27px;
+}
+#msgForm > form .form-group input[type="text"]{	/*文本输入框长度*/
+	width: 200px;
+}
+#msgForm input[type="button"]{	/*“完成”按钮*/
+	margin-bottom: 15px;
+}
+/*编辑信息弹框end*/

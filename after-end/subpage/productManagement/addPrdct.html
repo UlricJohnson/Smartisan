@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加商品</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/addPrdct.css"/>
+		
+		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/addPrdct.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="container">
+			
+			<form  id="addGoodsForm" enctype="multipart/form-data"  class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+			  		<span>商品编号：</span>
+			    	<input id= "id" name = "id" type="text" class="form-control">
+			    	<label class="errorClass" id="loginnameError">请输入商品编号</label>
+			  	</div>
+			  	<div class="form-group">
+			  		<span>商品名称：</span>
+			    	<input id = " name" name = "name"  type="text" class="form-control">
+			    	<label class="errorClass" id="loginnameError">请输入商品名称</label>
+			  	</div>
+			  	<div class="form-group">
+			  		<span>商品类型：</span>
+			    	<input id = " type"  name = "type"  type="text" class="form-control">
+			    	<label class="errorClass" id="loginnameError">请输入商品类型</label>
+			  	</div>
+			  	<div class="form-group">
+			  		<span>标题简介：</span>
+			    	<input id = " title" name = "title"  type="text" class="form-control">
+			    	<label class="errorClass" id="loginnameError">请输入商品标题简介</label>
+			  	</div>
+			  	<div class="form-group">
+			  		<span>详细介绍：</span>
+			    	<input id = " imge" name = "imge" type="file">
+			  	</div>
+			  	
+			  	<table class="table table-bordered">
+			  		<thead>
+			  			<tr>	<!--标题-->
+			  				<th class="text-center">型号</th>
+			  				<th class="text-center">颜色</th>
+			  				<th class="text-center">库存</th>
+			  				<th class="text-center">内存</th>
+			  				<th class="text-center">价格</th>
+			  				<th class="text-center">图片地址</th>
+			  				<th class="text-center">备注</th>
+			  			</tr>
+			  		</thead>
+			  		<tbody>
+			  			<tr>	<!--第1行-->
+			  				<td class="text-center"><input class="form-control" id = "mID1" name = "mID" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "color" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "number" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "capacity" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "price" type="text" /></td>
+			  				<td class="text-center"><input   name = "image" type="file" /></td>
+			  				<td class="text-center"><label class="errorClass" id="loginnameError">${errors.loginname}</label></td>
+			  			</tr>
+			  			<tr>	<!--第2行-->
+			  				<td class="text-center"><input class="form-control"  id = "mID2" name = "mID" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "color" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "number" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "capacity" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "price" type="text" /></td>
+			  				<td class="text-center"><input  name = "image2" type="file" /></td>
+			  				<td class="text-center"><label class="errorClass" id="loginnameError">${errors.loginname}</label></td>
+			  			</tr>
+			  			<tr>	<!--第3行-->
+			  				<td class="text-center"><input class="form-control"  id = "mID3" name = "mID" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "color" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "number" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "capacity" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "price" type="text" /></td>
+			  				<td class="text-center"><input  name = "image3" type="file" /></td>
+			  				<td class="text-center"><label class="errorClass" id="loginnameError">${errors.loginname}</label></td>
+			  			</tr>
+			  			<tr>	<!--第4行-->
+			  				<td class="text-center"><input class="form-control"  id = "mID4" name = "mID" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "color" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "number" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "capacity" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "price" type="text" /></td>
+			  				<td class="text-center"><input   name = "image4" type="file" /></td>
+			  				<td class="text-center"><label class="errorClass" id="loginnameError">${errors.loginname}</label></td>
+			  			</tr>
+			  			<tr>	<!--第5行-->
+			  				<td class="text-center"><input class="form-control"  id = "mID5" name = "mID" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "color" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "number" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "capacity" type="text" /></td>
+			  				<td class="text-center"><input class="form-control"  name = "price" type="text" /></td>
+			  				<td class="text-center"><input   name = "image5" type="file" /></td>
+			  				<td class="text-center"><label class="errorClass" id="loginnameError">${errors.loginname}</label></td>
+			  			</tr>
+			  		</tbody>
+			  	</table>
+			  	
+			  	<div class="btnDiv">
+				  	<input type="button"  class="btn btn-default" value="确&nbsp;&nbsp;&nbsp;定">
+				  	<!--<input type="submit" class="btn btn-default" value="取&nbsp;&nbsp;&nbsp;消">-->
+				  	<button class="btn btn-default">取&nbsp;&nbsp;&nbsp;消</button>
+				</div>
+			</form>
+			
+		</div>
+		
+	</body>
+</html>

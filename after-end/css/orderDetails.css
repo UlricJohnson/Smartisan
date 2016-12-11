@@ -1,0 +1,106 @@
+#content{
+	margin-top: 20px;
+}
+
+/*顶部搜索框组begin*/
+#container .row{
+	margin-top: 30px;
+}
+
+#container .btn-group{
+	margin-left: 70px;
+}
+
+#container .row .col-lg-6{
+	margin-right: 100px;
+	width: 300px;
+	float: right;
+}
+/*顶部搜索框组end*/
+
+/*内容表格begin*/
+	/*设置表格列宽begin*/
+.table  tr > th:nth-child(1), 
+.table  tr > td:nth-child(1),
+.table  tr > th:nth-child(2), 
+.table  tr > td:nth-child(2){	
+	width: 15%;	/*表格的第1、2列宽度*/
+}
+.table  tr > th:nth-child(3), 
+.table  tr > td:nth-child(3),
+.table  tr > th:nth-child(4), 
+.table  tr > td:nth-child(4),
+.table  tr > th:nth-child(6), 
+.table  tr > td:nth-child(6){
+	width: 20%;	/*表格第3、4、6列宽度*/
+}
+
+.table  tr > th:nth-child(5), 
+.table  tr > td:nth-child(5){
+	width: 10%;	/*表格第5列宽度*/
+}
+	/*设置表格列宽end*/
+
+#content > .table{
+	border-radius: 15px;
+}
+
+#content > .table > tbody td .btn{	/*表格里面的按钮*/`
+	display: block;
+	margin: 0 5px;
+}
+/*内容表格end*/
+
+/*编辑信息弹框begin*/
+#editMsg{
+	display: none;
+}
+
+#back{	/*灰色背景div*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(71,71,71,0.2);
+}
+
+#msgForm{	/*弹框表格div*/
+	border: 5px solid green;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.95);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -275px;
+	margin-left: -175px;
+	width: 355px;
+	height: 450px;
+}
+
+#msgForm header h4{	/*弹框表格div标题*/
+	/*margin: 0;*/
+	text-align: center;
+	padding: 0;
+}
+
+#msgForm .close{	/*弹框关闭按钮位置*/
+	position: relative;
+	top: -40px;
+}
+
+#msgForm > form{	/*弹框表格*/
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+#msgForm > form .form-group{
+	margin: 10px auto;
+}
+#msgForm > form .form-group input{	/*文本输入框*/
+	margin-left: 20px;
+	width: 200px;
+}
+#msgForm > form .form-group div.dropdown{
+	display: inline-block;
+	margin-left: 45px;
+}
+/*编辑信息弹框end*/

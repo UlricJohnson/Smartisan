@@ -1,0 +1,111 @@
+
+/*搜索框begin*/
+#searchDIV{
+	width: 410px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#searchInput{
+	border-radius: 3px;
+	width: 250px;
+}
+
+#searchBtn{
+	margin-left: 10px;
+}
+/*搜索框end*/
+
+/*内容表格begin*/
+/*设置表格列宽begin*/
+.table  tr > th:nth-child(1), 
+.table  tr > td:nth-child(1){	/*表格第1列宽度*/
+	width: 10%;	
+}
+.table  tr > th:nth-child(2), 
+.table  tr > td:nth-child(2){	/*表格第2列宽度*/
+	width: 10%;	
+}
+.table  tr > th:nth-child(3), 
+.table  tr > td:nth-child(3){	/*表格第3列宽度*/
+	width: 25%;	
+}
+.table  tr > th:nth-child(4), 
+.table  tr > td:nth-child(4){	/*表格第4列宽度*/
+	width: 15%;	
+}
+.table  tr > th:nth-child(5), 
+.table  tr > td:nth-child(5){	/*表格第5列宽度*/
+	width: 15%;	
+}
+.table  tr > th:nth-child(6), 
+.table  tr > td:nth-child(6){	/*表格第6列宽度*/
+	width: 20%;
+}
+/*设置表格列宽end*/
+
+#content{
+	margin-top: 30px;
+}
+
+.table tr input[type=checkbox]{	/*复选框大小*/
+	width: 15px;
+	height: 15px;
+}
+
+.table > thead > tr > th{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table > tbody > td{
+	height: 100px;
+	border: 0;
+	overflow: hidden; 
+}
+
+.table tbody td img{	/*缩略图*/
+	width: 200px;
+	height: 70px;
+	margin:10px;
+}
+
+.table tbody td .btn{	/*操作按钮*/
+	margin: 0 5px;
+}
+/*内容表格end*/
+
+/*分页begin*/
+footer{
+	width: 430px;
+	margin: 0 auto;
+	display: inline-block;
+	margin-left: 385px;
+}
+
+.pager{
+	margin: 0;
+	/*margin-left: 45%;*/
+	width: 200px;
+	display: inline-block;
+}
+
+footer .pager a{
+	margin-right: 10px;
+}
+
+.navbar-form{
+	margin: 0;
+}
+
+.navbar-form .form-control{
+	width: 50px;
+}
+/*分页end*/
+
+/*下架按钮*/
+#offShelfBtn{
+	float: right;
+	margin-right: 30px;
+	width: 100px;
+}

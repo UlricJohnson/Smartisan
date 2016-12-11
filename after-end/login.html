@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>后台登录</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="loginDiv">
+			
+			<div id="logoDiv">
+				<img src="img/logo.jpg"/>
+			</div>
+			
+			<form class="navbar-form navbar-left" role="search" action="">
+				<div class="form-group">
+					<span>账号：</span>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group">
+					<span>密码：</span>
+					<input type="password" class="form-control" >
+				</div>
+				<div class="form-group">
+				  	<span>验证码：</span>
+				    <input type="text" class="form-control">
+				    <div id="verificationCodeDiv"><img src="img/banner.jpg" id="verificationCode"/></div>
+				</div>
+				<!--<button type="submit" class="btn btn-warning btn-block">添加</button>-->
+				<input class="btn btn-success " type="button" onclick="window.location='index.html'" value="登&nbsp;&nbsp;&nbsp;&nbsp;录" />
+			</form>
+			
+		</div>
+		
+	</body>
+</html>
